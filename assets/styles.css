@@ -1,0 +1,53 @@
+/* Base styles */
+body {
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+/* Chat messages */
+.user-message {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 10px 0;
+    max-width: 80%;
+    float: right;
+    clear: both;
+}
+
+.bot-message {
+    background-color: #3d3d3d;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 10px 0;
+    max-width: 80%;
+    float: left;
+    clear: both;
+}
+
+/* Flight cards */
+.flight-card {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #00c7b7;
+}
+
+/* Input area */
+.stTextInput>div>div>input {
+    color: #ffffff;
+    background-color: #3d3d3d;
+}
+
+.stButton>button {
+    background-color: #00c7b7;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+}
+
+.stButton>button:hover {
+    background-color: #00a398;
+    color: white;
+}
