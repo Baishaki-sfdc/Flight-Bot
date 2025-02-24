@@ -195,6 +195,11 @@ def main():
     initialize_session()
 
     st.title("✈️ AirMate")
+    st.sidebar.title("Settings")
+    api_key=st.sidebar.text_input("Enter your api key:",type="password")
+
+    #st.secrets["OPENROUTER_API_KEY"]
+    #st.secrets["OPENROUTER_URL"]
 
      # Display errors (NEW)
     if st.session_state.errors:
