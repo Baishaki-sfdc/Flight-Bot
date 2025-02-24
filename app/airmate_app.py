@@ -195,17 +195,7 @@ def main():
     initialize_session()
 
     st.title("✈️ AirMate")
-    st.sidebar.title("Settings")
-    api_key=st.sidebar.text_input("Enter your api key:",type="password")
-    url=st.sidebar.text_input("Enter the openrouter url:")
-
-
-    # Update global API settings with sidebar values
-    global OPENROUTER_API_KEY, OPENROUTER_URL
-    if api_key:
-         OPENROUTER_API_KEY = api_key
-    if url:
-         OPENROUTER_URL = url
+    
 
     #st.secrets["OPENROUTER_API_KEY"]
     #st.secrets["OPENROUTER_URL"]
@@ -236,9 +226,9 @@ def main():
         system_message = {
             "role": "system",
             "content": """You are AirMate, an AI flight booking assistant. Guide the user through collecting:
-        1. Departure City (valid city name)
-        2. Destination (valid city name)
-        3. Travel Dates (future dates in DD-MM-YYYY format)
+        1. Departure City 
+        2. Destination 
+        3. Travel Dates(dates in DD-MM-YYYY format)
         4. Preferred Airline
         5. Seating Class (Economy/Premium Economy/Business/First)
         
