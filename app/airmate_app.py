@@ -197,6 +197,15 @@ def main():
     st.title("✈️ AirMate")
     st.sidebar.title("Settings")
     api_key=st.sidebar.text_input("Enter your api key:",type="password")
+    url=st.sidebar.text_input("Enter the openrouter url:")
+
+
+    # Update global API settings with sidebar values
+    global OPENROUTER_API_KEY, OPENROUTER_URL
+    if api_key:
+         OPENROUTER_API_KEY = api_key
+    if url:
+         OPENROUTER_URL = url
 
     #st.secrets["OPENROUTER_API_KEY"]
     #st.secrets["OPENROUTER_URL"]
